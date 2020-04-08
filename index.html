@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping cart</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      nav {
+        background: #e0cec0;
+        text-align: center;
+        height: 2em;
+        line-height: 2em;
+        padding: 0.5em 0;
+        border-bottom: 1px solid grey;
+      }
+      main {
+        max-width: 30em;
+        margin: auto;
+        padding-top: 0.5em;
+        border-left: solid 1px grey;
+        border-right: solid 1px grey;
+        min-height: calc(100vh - 3.5em);
+        background: #f1f1f1;
+      }
+      button {
+        background: #ffca9b;
+        padding: 0.5em;
+        border-radius: 1em;
+        font-size: 1em;
+        min-width: 10em;
+        cursor: pointer;
+      }
+
+      nav h1 {
+        margin: 0;
+      }
+      #previous-orders {
+        position: absolute;
+        top: 4em;
+        left: 0;
+        background: #ffefe2;
+        padding: 1em;
+        max-width: 9em;
+        border-bottom-right-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        box-shadow: 0 0 1em;
+        border: 1px solid black;
+      }
+      #previous-orders > h4 {
+        margin: 0;
+        margin-bottom: 0.5em;
+      }
+      #previous-orders > div {
+        padding-bottom: 1em;
+        border-bottom: 1px grey solid;
+        margin-top: 0.5em;
+      }
+      #previous-orders > div > span {
+        display: block;
+        float: right;
+        font-weight: bold;
+      }
+
+      #products img {
+        max-width: 4em;
+        border: solid 1px grey;
+        box-shadow: 0 0 0.3em;
+      }
+
+      #products > div {
+        display: flex;
+        padding: 1em 0.5em;
+        border-bottom: 1px solid grey;
+      }
+
+      #products > div > h3 {
+        margin-left: 1em;
+      }
+
+      #products > div > select {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 1em;
+      }
+
+      #products > div > p {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: 1em;
+      }
+
+      #products > h2 {
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid gray;
+        padding: 0.5em 0;
+      }
+
+      #cart > button {
+        float: right;
+        margin-top: 1em;
+      }
+      div#total {
+        font-size: 1.5em;
+        text-align: right;
+        margin: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>
+        Emergency Supplies
+      </h1>
+    </nav>
+    <main>
+      <div id="previous-orders">
+        <h4>Previous orders</h4>
+      </div>
+      <div id="cart">
+        <div id="products">
+          <h2>Choose your products</h2>
+        </div>
+        <div id="total">Total: <span>£0.00</span></div>
+        <button>Place order</button>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
