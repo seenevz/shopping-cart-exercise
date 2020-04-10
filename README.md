@@ -30,6 +30,4 @@
 
 ```HTML
 <div>2 Hand sanitisers, 2 Pastas<span>£35.96</span></div>
-
-## Made by Sam Barker
 ```
